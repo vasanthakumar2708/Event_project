@@ -1,0 +1,65 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .form-container input,
+  .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0044cc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .form-container button:hover {
+    background-color: #003399;
+  }
+  .radio-group {
+    margin-bottom: 15px;
+  }
+  .radio-group .radio-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .radio-group .radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+  }
+  .radio-buttons label {
+    display: flex;
+    align-items: center;
+  }
+  .radio-buttons label input[type="radio"] {
+    margin-right: 5px;
+  }

@@ -1,0 +1,76 @@
+<div class="form-container">
+    <h2>Accessories Request Form</h2>
+    <form id="accessoriesForm">
+      <label for="venueName">Name of the Venue:</label>
+      <input type="text" id="venueName" required />
+
+      <label for="eventDate">Date:</label>
+      <input type="date" id="eventDate" required />
+
+      <label for="taskId">Task ID:</label>
+      <input type="text" id="taskId" required />
+
+      <div class="accessories-requirements">
+        <h3>Accessories Requirements</h3>
+        <div class="checkbox-group">
+          <label
+            ><input
+              type="checkbox"
+              name="accessoriesRequirement"
+              value="largeMemento"
+            />
+            Large Memento</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="accessoriesRequirement"
+              value="smallMemento"
+            />
+            Small Memento</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="accessoriesRequirement"
+              value="shawl"
+            />
+            Shawl</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="accessoriesRequirement"
+              value="scribblingPad"
+            />
+            Scribbling Pad</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="accessoriesRequirement"
+              value="penPencil"
+            />
+            Pen/Pencil</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="accessoriesRequirement"
+              value="waterBottles"
+            />
+            Water Bottles</label
+          >
+        </div>
+      </div>
+
+      <label for="specialRequest">Special Request, if any:</label>
+      <textarea
+        id="specialRequest"
+        rows="4"
+        placeholder="Enter any special requests..."
+      ></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>

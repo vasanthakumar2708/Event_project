@@ -1,0 +1,85 @@
+<div class="header">
+    <div class="title">BIT-Event Management</div>
+    <div class="right">
+      <div class="username">
+        Vasanthakumar G
+        <img src="images/vimage.jpg" alt="User Icon" width="24" height="24" />
+      </div>
+      <button onclick="logout()">Logout</button>
+      <button class="theme-toggle" onclick="toggleTheme()">
+        Dark/Light Theme
+      </button>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <h3>Resources</h3>
+   <button class="button" (click)="navigateToAnnexure()">Annexure form</button>
+   <button class="button" (click)="navigateToAudio()">Audio form</button>
+   <button class="button" (click)="navigateToAccessories()">Accessroies form</button>
+   <button class="button" (click)="navigateToPhotography()">photography form</button>
+   <button class="button" (click)="navigateToExternaltansport()">externaltransport form</button>
+   <button class="button" (click)="navigateToGuest()">guest form</button>
+   <button class="button" (click)="navigateToGuestdetails()">guestdetails form</button>
+   <button class="button" (click)="navigateToHostel()">hostel form</button>
+   <button class="button" (click)="navigateToInternaltransport()">internaltransport form</button>
+   <button class="button" (click)="navigateToLOcaltransport()">localtransport form</button>
+   <button class="button" (click)="navigateToVenue()">venue form</button>
+   
+  </div>
+
+  <div class="content">
+    <div class="dashboard-content">
+      <div class="dashboard-title">Dashboard</div>
+      <div class="event-details">
+        <h2>Event Details</h2>
+        <p><strong>Event Name:</strong> <span id="eventName"></span></p>
+        <p><strong>Date:</strong> <span id="eventDate"></span></p>
+        <p><strong>Time:</strong> <span id="eventTime"></span></p>
+        <p>
+          <strong>Audio Form Needed:</strong> <span id="audioForm"></span>
+        </p>
+        <p>
+          <strong>Accessories Form Needed:</strong>
+          <span id="accessoriesForm"></span>
+        </p>
+        <p>
+          <strong>Photography Form Needed:</strong>
+          <span id="photographyForm"></span>
+        </p>
+        <p>
+          <strong>Venue Form Needed:</strong> <span id="venueForm"></span>
+        </p>
+        <p>
+          <strong>Hostel Accommodation Form Needed:</strong>
+          <span id="hostelForm"></span>
+        </p>
+        <p>
+          <strong>Guest Accommodation Form Needed:</strong>
+          <span id="guestAccommodationForm"></span>
+        </p>
+        <p>
+          <strong>Local Transport Needed:</strong>
+          <span id="localTransportForm"></span>
+        </p>
+        <p>
+          <strong>External Transport Form Needed:</strong>
+          <span id="externalTransportForm"></span>
+        </p>
+        <p>
+          <strong>Internal Transport Form Needed:</strong>
+          <span id="internalTransportForm"></span>
+        </p>
+        <p>
+          <strong>Guest Details Needed:</strong>
+          <span id="guestDetailsForm"></span>
+        </p>
+      </div>
+      <a
+        href="C:\Users\Vasantha Kumar G\Desktop\demo event\annexureform.html"
+        class="edit-button"
+        >Edit Your Response</a
+      >
+    </div>
+    <div class="no-entries">No entries yet</div>
+  </div>

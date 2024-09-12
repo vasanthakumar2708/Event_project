@@ -1,0 +1,57 @@
+<div class="form-container">
+    <h2>Audio Request Form</h2>
+    <form id="audioForm">
+      <label for="venueName">Name of the Venue:</label>
+      <input type="text" id="venueName" required />
+
+      <label for="eventDate">Date:</label>
+      <input type="date" id="eventDate" required />
+
+      <label for="taskId">Task ID:</label>
+      <input type="text" id="taskId" required />
+
+      <div class="audio-requirements">
+        <h3>Audio Requirements</h3>
+        <div class="checkbox-group">
+          <label
+            ><input type="checkbox" name="audioRequirement" value="handMic" />
+            Hand Mic</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="audioRequirement"
+              value="collarMic"
+            />
+            Collar Mic</label
+          >
+          <label
+            ><input type="checkbox" name="audioRequirement" value="podium" />
+            Podium</label
+          >
+          <label
+            ><input type="checkbox" name="audioRequirement" value="ac" />
+            AC</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="audioRequirement"
+              value="projector"
+            />
+            Projector</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="audioRequirement"
+              value="liveScreening"
+            />
+            Live Screening</label
+          >
+        </div>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>

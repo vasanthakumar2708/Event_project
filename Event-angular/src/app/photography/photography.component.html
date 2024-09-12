@@ -1,0 +1,52 @@
+<div class="form-container">
+    <h2>Photography Request Form</h2>
+    <form id="photographyForm">
+      <label for="venueName">Name of the Venue:</label>
+      <input type="text" id="venueName" required />
+
+      <label for="eventDate">Date:</label>
+      <input type="date" id="eventDate" required />
+
+      <label for="taskId">Task ID:</label>
+      <input type="text" id="taskId" required />
+
+      <div class="photography-requirements">
+        <h3>Photography Requirements</h3>
+        <div class="checkbox-group">
+          <label
+            ><input
+              type="checkbox"
+              name="photographyRequirement"
+              value="photography"
+            />
+            Photography</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="photographyRequirement"
+              value="videoRecording"
+            />
+            Video Recording</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="photographyRequirement"
+              value="time"
+            />
+            Time</label
+          >
+        </div>
+      </div>
+
+      <label for="specialRequest">Special Request, if any:</label>
+      <textarea
+        id="specialRequest"
+        rows="4"
+        placeholder="Enter any special requests..."
+      ></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
