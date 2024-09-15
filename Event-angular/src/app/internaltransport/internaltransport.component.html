@@ -1,1 +1,206 @@
-<p>internaltransport works!</p>
+<div class="form-container">
+    <h2>Internal Transport Requisition Form</h2>
+    <form id="transportForm">
+    
+    <!-- Indenter and Details Section (Side-by-Side Layout) -->
+    <div class="form-row">
+      <div class="form-group half-width">
+        <label for="requisitionDate">Date of Requisition:</label>
+        <input type="date" id="requisitionDate" required />
+      </div>
+      
+      <div class="form-group half-width">
+        <label for="indenterName">Name of the Indenter:</label>
+        <input type="text" id="indenterName" required />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group half-width">
+        <label for="contactNo">Contact Number:</label>
+        <input type="text" id="contactNo" required />
+      </div>
+
+      <div class="form-group half-width">
+        <label for="intercomNo">Intercom Number:</label>
+        <input type="number" id="intercomNo" required />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group half-width">
+        <label for="designation">Designation:</label>
+        <input type="text" id="designation" required />
+      </div>
+
+      <div class="form-group half-width">
+        <label for="staffId">Staff ID:</label>
+        <input type="text" id="staffId" required />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group half-width">
+        <label for="mailId">Mail ID:</label>
+        <input type="email" id="mailId" required />
+      </div>
+
+      <div class="form-group half-width">
+        <label for="department">Department:</label>
+        <input type="text" id="department" required />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group half-width">
+        <label for="taskId">Task ID:</label>
+        <input type="text" id="taskId" required />
+      </div>
+    </div>
+    
+    <!-- Journey Section -->
+    <div class="journey-section">
+      <div class="journey-header-row">
+        <p></p> <!-- Empty space for first column -->
+        <div class="journey-column-header onward-header">
+          <p>Onward Journey</p>
+        </div>
+        <div class="journey-column-header return-header">
+          <p>Return Journey</p>
+        </div>
+      </div>
+      
+      <!-- Labels and inputs for the Journey Section -->
+      <div class="journey-row">
+        <p>Vehicle Required On:</p>
+        <div class="journey-column">
+          <input type="date" id="onwardVehicleDate" required />
+        </div>
+        <div class="journey-column">
+          <input type="date" id="returnVehicleDate" required />
+        </div>
+      </div>
+      
+      <div class="journey-row">
+        <p>Starting Place:</p>
+        <div class="journey-column">
+          <input type="text" id="onwardStartPlace" required />
+        </div>
+        <div class="journey-column">
+          <input type="text" id="returnStartPlace" required />
+        </div>
+      </div>
+      
+      <div class="journey-row">
+        <p>Starting Time:</p>
+        <div class="journey-column">
+          <input type="time" id="onwardStartTime" required />
+        </div>
+        <div class="journey-column">
+          <input type="time" id="returnStartTime" required />
+        </div>
+      </div>
+      
+      <div class="journey-row">
+        <p>End Place:</p>
+        <div class="journey-column">
+          <input type="text" id="onwardEndPlace" required />
+        </div>
+        <div class="journey-column">
+          <input type="text" id="returnEndPlace" required />
+        </div>
+      </div>
+      
+      <div class="journey-row">
+        <p>End Time:</p>
+        <div class="journey-column">
+          <input type="time" id="onwardEndTime" required />
+        </div>
+        <div class="journey-column">
+          <input type="time" id="returnEndTime" required />
+        </div>
+      </div>
+      
+      <div class="journey-row">
+        <p>No of Persons:</p>
+        <div class="journey-column">
+          <input type="number" id="onwardNoPersons" required />
+        </div>
+        <div class="journey-column">
+          <input type="number" id="returnNoPersons" required />
+        </div>
+      </div>
+    </div>
+    
+    <!-- Accompanying Passengers and No. of Vehicles Section -->
+    <div class="passengers-section">
+      <div class="form-row">
+        <div class="form-group half-width">
+          <label for="accompanyingPassengers">No of Accompanying Passengers (if any):</label>
+          <input type="number" id="accompanyingPassengers" />
+        </div>
+  
+        <div class="form-group half-width">
+          <label for="numVehicles">No of Vehicles:</label>
+          <input type="number" id="numVehicles" required />
+        </div>
+      </div>
+    </div>
+    
+    <!-- Table Section -->
+    <div class="table-container">
+      <table class="table">
+        <tr>
+          <th>S.No</th>
+          <th>Name</th>
+          <th>Staff ID</th>
+          <th>Designation</th>
+          <th>Contact Number</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+        </tr>
+      </table>
+    </div>
+  
+    <!-- Purpose and Industry/Company Section -->
+    <div class="full-width">
+      <label for="visitPurpose">Purpose of the Visit:</label>
+      <textarea id="visitPurpose" rows="4" required></textarea>
+  
+      <label for="industryName">Industries/Companies Name:</label>
+      <textarea id="industryName" rows="2" required></textarea>
+    </div>
+    
+    <!-- Submit Button Section -->
+    <div class="submit-container">
+      <button type="submit" class="submit-button">Submit</button>
+    </div>
+    
+  </form>
+</div>

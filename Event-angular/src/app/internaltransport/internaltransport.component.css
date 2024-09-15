@@ -1,0 +1,137 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  .form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #0044cc;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+  }
+  .form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .form-container input,
+  .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Journey Section Styling */
+  .journey-section {
+    background-color: #e8f0fe;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  .journey-header-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .journey-column-header {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    background-color: #cce7ff;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  .journey-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .journey-row p {
+    flex-basis: 30%;
+    font-weight: bold;
+  }
+  .journey-column {
+    flex: 1;
+    padding-right: 15px;
+  }
+  .journey-column input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Accompanying Passengers and No of Vehicles Section */
+  .passengers-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .half-width {
+    width: 48%;
+  }
+  
+  /* Table Section */
+  .table-container {
+    background-color: #e8f0fe;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .table th, .table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  .table th {
+    background-color: #0044cc;
+    color: #fff;
+  }
+  /* Submit Container */
+.submit-container {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    margin-top: 20px; /* Optional: Add some space above the button */
+  }
+  
+  .submit-button {
+    width: 300px; /* Increase the fixed width */
+    background-color: #0044cc; /* Button background color */
+    color: #fff; /* Text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Vertical and horizontal padding */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  
+  
+  .submit-button:hover {
+    background-color: #003399; /* Darker shade on hover */
+  }
+  

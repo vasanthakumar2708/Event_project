@@ -1,1 +1,144 @@
-<p>hostel works!</p>
+<div class="form-container">
+  <!-- Hostel Accommodation Section -->
+  <h2>Hostel Accommodation</h2>
+
+  <!-- Guest and Task Details Section -->
+  <div class="form-row">
+      <div class="form-group">
+          <label for="accommodationDate">Date:</label>
+          <input type="date" id="accommodationDate" required />
+      </div>
+      <div class="form-group">
+          <label for="guestName">Guest Name:</label>
+          <input type="text" id="guestName" required />
+      </div>
+  </div>
+
+  <div class="form-row">
+      <div class="form-group">
+          <label for="guestDesignation">Guest Designation:</label>
+          <input type="text" id="guestDesignation" required />
+      </div>
+      <div class="form-group">
+          <label for="taskId">Task ID:</label>
+          <input type="text" id="taskId" required />
+      </div>
+  </div>
+
+  <div class="form-row">
+      <div class="form-group">
+          <label for="guestIndustry">Guest Industry/Industry Name:</label>
+          <input type="text" id="guestIndustry" required />
+      </div>
+      <div class="form-group">
+          <label for="guestAddress">Guest Address:</label>
+          <input type="text" id="guestAddress" required />
+      </div>
+  </div>
+
+  <div class="form-row">
+      <div class="form-group">
+          <label for="guestMobileNo">Guest Mobile Number:</label>
+          <input type="text" id="guestMobileNo" required />
+      </div>
+      <div class="form-group">
+          <label for="guestEmail">Guest Email ID:</label>
+          <input type="email" id="guestEmail" required />
+      </div>
+  </div>
+
+  <!-- Faculty and Intercom Details Section -->
+  <div class="form-row">
+      <div class="form-group">
+          <label for="guidingFaculty">Guiding Faculty:</label>
+          <input type="text" id="guidingFaculty" required />
+      </div>
+      <div class="form-group">
+          <label for="facultyId">Faculty ID:</label>
+          <input type="text" id="facultyId" required />
+      </div>
+  </div>
+
+  <div class="form-row">
+      <div class="form-group">
+          <label for="facultyMobile">Mobile No:</label>
+          <input type="text" id="facultyMobile" required />
+      </div>
+      <div class="form-group">
+          <label for="facultyIntercom">Intercom No:</label>
+          <input type="number" id="facultyIntercom" required />
+      </div>
+  </div>
+
+
+    <!-- Accommodation Type Section -->
+    <div class="checkbox-group">
+      <label>Accommodation Type:</label>
+      <div class="checkbox-options">
+        <label><input type="checkbox" id="boysHostel" /> Boys Hostel</label>
+        <label><input type="checkbox" id="ladiesHostel" /> Ladies Hostel</label>
+        <label><input type="checkbox" id="notRequired" /> Not Required</label>
+      </div>
+    </div>
+
+    <!-- Room Type Section -->
+    <div class="checkbox-group">
+      <label>Room Type:</label>
+      <div class="checkbox-options">
+        <label><input type="checkbox" id="doubleOccupancy" /> Double Occupancy</label>
+        <label><input type="checkbox" id="fourOccupancy" /> Four Occupancy</label>
+        <label><input type="checkbox" id="dormitory" /> Dormitory</label>
+      </div>
+    </div>
+
+    <!-- Dining Request Section -->
+    <div class="checkbox-group">
+      <label>Dining Request:</label>
+      <div class="checkbox-options">
+        <label><input type="checkbox" id="diningRequired" /> Required</label>
+        <label><input type="checkbox" id="diningNotRequired" /> Not Required</label>
+      </div>
+    </div>
+
+    <!-- Dining Details Section -->
+    <div class="dining-section">
+      <h3>Dining Details</h3>
+      <table class="dining-table">
+        <thead>
+          <tr>
+            <th style="width: 20%;">Dining Facility</th>
+            <th style="width: 30%;">Date</th>
+            <th style="width: 25%;">Time</th>
+            <th style="width: 25%;">Number of Persons</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Breakfast</td>
+            <td><input type="date" id="breakfastDate"style="width: 100%;" /></td>
+            <td><input type="time" id="breakfastTime"style="width: 100%;" /></td>
+            <td><input type="number" id="breakfastPersons"style="width: 100%;" /></td>
+          </tr>
+          <tr>
+            <td>Lunch</td>
+            <td><input type="date" id="lunchDate"style="width: 100%;" /></td>
+            <td><input type="time" id="lunchTime"style="width: 100%;" /></td>
+            <td><input type="number" id="lunchPersons"style="width: 100%;" /></td>
+          </tr>
+          <tr>
+            <td>Dinner</td>
+            <td><input type="date" id="dinnerDate"style="width: 100%;" /></td>
+            <td><input type="time" id="dinnerTime"style="width: 100%;" /></td>
+            <td><input type="number" id="dinnerPersonsstyle=width: 100%;" /></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Special Request Section -->
+      <label for="specialRequest">Special Request (if any):</label>
+      <textarea id="specialRequest" rows="3"></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit</button>
+  </div>

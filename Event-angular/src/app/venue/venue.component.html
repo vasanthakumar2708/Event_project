@@ -1,1 +1,53 @@
-<p>venue works!</p>
+<div class="form-container">
+    <h2>Venue Request Form</h2>
+    <form id="venueForm">
+      <label for="eventDate">Date:</label>
+      <input type="date" id="eventDate" required />
+
+      <label for="taskId">Task ID:</label>
+      <input type="text" id="taskId" required />
+
+      <label for="venueCount">Number of Venues Required:</label>
+      <input type="number" id="venueCount" required />
+
+      <label for="participants">Expected Participants:</label>
+      <input type="number" id="participants" required />
+
+      <div class="requirements-section">
+        <h3>Venue Requirements</h3>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="venueRequirement" value="classroom" /> Classroom</label>
+          <label><input type="checkbox" name="venueRequirement" value="seminarHall" /> Seminar Hall</label>
+          <label><input type="checkbox" name="venueRequirement" value="auditorium" /> Auditorium</label>
+          <label><input type="checkbox" name="venueRequirement" value="lab" /> Lab</label>
+          <label><input type="checkbox" name="venueRequirement" value="conferenceHall" /> Conference Hall</label>
+          <label><input type="checkbox" name="venueRequirement" value="discussionRoom" /> Discussion Room</label>
+          <label><input type="checkbox" name="venueRequirement" value="others" /> Others</label>
+        </div>
+      </div>
+
+      <div class="requirements-section">
+        <h3>Hall Requirements</h3>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="hallRequirement" value="guestChair" /> Guest Chair</label>
+          <label><input type="checkbox" name="hallRequirement" value="daisTable" /> Dais Table</label>
+          <label><input type="checkbox" name="hallRequirement" value="audienceChair" /> Audience Chair</label>
+          <label><input type="checkbox" name="hallRequirement" value="samiYana" /> Sami Yana</label>
+          <label><input type="checkbox" name="hallRequirement" value="stall" /> Stall</label>
+          <label><input type="checkbox" name="hallRequirement" value="backdrop" /> Backdrop</label>
+          <label><input type="checkbox" name="hallRequirement" value="helpDesk" /> Help Desk</label>
+          <label><input type="checkbox" name="hallRequirement" value="internetFacility" /> Internet Facility</label>
+          <div class="internet-facility">
+            <label><input type="checkbox" name="internetRequirement" value="LAN" /> LAN</label>
+            <label><input type="checkbox" name="internetRequirement" value="WIFI" /> WIFI</label>
+            <label><input type="checkbox" name="internetRequirement" value="both" /> Both</label>
+          </div>
+        </div>
+      </div>
+
+      <label for="specialRequest">Special Request, if any:</label>
+      <textarea id="specialRequest" rows="4" placeholder="Enter any special requests..."></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
