@@ -97,4 +97,9 @@ body {
   margin-top: 10px;
   font-size: 14px;
 }
+  
+#google-btn {
+  margin-left: -20px; /* Adjust the value as needed */
+}
+
 

@@ -1,11 +1,12 @@
 <div class="header">
     <div class="title">BIT-Event Management</div>
-    <div class="right">
-      <div class="username">
-        Vasanthakumar G
-        <img src="images/vimage.jpg" alt="User Icon" width="24" height="24" />
-      </div>
-      <button onclick="logout()">Logout</button>
+    <div class="top-right">
+      <!-- Display the user name -->
+      <span>{{ userName }}</span>
+    
+      <!-- Display the profile picture -->
+      <img [src]="userPicture" alt="User Icon" width="40" height="40">
+      <button (click)="signOut()">Logout</button>
       <button class="theme-toggle" onclick="toggleTheme()">
         Dark/Light Theme
       </button>

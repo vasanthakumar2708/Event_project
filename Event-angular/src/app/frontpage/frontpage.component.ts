@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit} from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-frontpage',
@@ -8,8 +9,33 @@ import { Router } from '@angular/router';
   templateUrl: './frontpage.component.html',
   styleUrl: './frontpage.component.css'
 })
-export class FrontpageComponent {
+export class FrontpageComponent implements OnInit {
+  userName: string | null = '';
+  userPicture: string | null = '';
   constructor(private router: Router) { }
+  ngOnInit(): void {
+       // Retrieve user details from sessionStorage
+       this.userName = sessionStorage.getItem('userName');
+       this.userPicture = sessionStorage.getItem('userPicture');
+   
+  }
+  auth = inject(AuthService);
+  signOut(){
+    sessionStorage.removeItem("userName");
+    sessionStorage.removeItem("userPicture");
+    this.auth.signOut();
+
+  }
+/*
+  logout() {
+    // Clear the session storage
+    sessionStorage.clear();
+  
+    // Optionally navigate to login page or homepage
+    this.router.navigate(['/frontpage']);
+  }
+    */
+  
 
   navigateToAnnexure() {
     this.router.navigate(['/annexure']);
@@ -45,3 +71,4 @@ export class FrontpageComponent {
     this.router.navigate(['/venue']);
   }
 }
+
