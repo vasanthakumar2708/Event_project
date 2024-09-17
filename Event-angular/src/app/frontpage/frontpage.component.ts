@@ -1,4 +1,4 @@
-import { Component, inject, OnInit} from '@angular/core';
+import { Component, inject, OnInit, ViewEncapsulation} from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../auth.service';
 
@@ -7,7 +7,8 @@ import { AuthService } from '../auth.service';
   standalone: true,
   imports: [],
   templateUrl: './frontpage.component.html',
-  styleUrl: './frontpage.component.css'
+  styleUrl: './frontpage.component.css',
+  encapsulation: ViewEncapsulation.None 
 })
 export class FrontpageComponent implements OnInit {
   userName: string | null = '';
