@@ -13,8 +13,8 @@ import { HostelComponent } from './hostel/hostel.component';
 import { InternaltransportComponent } from './internaltransport/internaltransport.component';
 
 export const routes: Routes = [
-    {path:'', component: LoginComponent },
-    { path: 'frontpage', component: FrontpageComponent },
+  {path:'', component: LoginComponent },
+  { path: 'frontpage', component: FrontpageComponent },
   { path: 'annexure', component: AnnexureformComponent },
   {path: 'audio', component: AudioComponent},
   {path: 'accessories', component: AccessoriesComponent},

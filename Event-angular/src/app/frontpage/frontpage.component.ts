@@ -18,12 +18,15 @@ export class FrontpageComponent implements OnInit {
        // Retrieve user details from sessionStorage
        this.userName = sessionStorage.getItem('userName');
        this.userPicture = sessionStorage.getItem('userPicture');
+       console.log('User Name:', this.userName);
+       console.log('User Picture:', this.userPicture);
    
   }
   auth = inject(AuthService);
   signOut(){
     sessionStorage.removeItem("userName");
     sessionStorage.removeItem("userPicture");
+    sessionStorage.removeItem("loggedInUser");
     this.auth.signOut();
 
   }

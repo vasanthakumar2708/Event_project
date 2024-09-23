@@ -26,6 +26,7 @@ export class LoginComponent implements OnInit {
       shape: 'rectangle',
       width: 350
     })
+    
   }
 
   private decodeToken(token: string){
@@ -35,6 +36,8 @@ export class LoginComponent implements OnInit {
     if(response){
       //decode the token
       const payLoad = this.decodeToken(response.credential);
+      console.log("Decoded Payload:", payLoad);
+
       //store in session
       sessionStorage.setItem("loggedInUser", JSON.stringify(payLoad));
        // Extract the user name and picture from the decoded payload
