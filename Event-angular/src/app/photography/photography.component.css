@@ -8,7 +8,7 @@ body {
   .form-container {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: rgb(61, 81, 110);;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -25,6 +25,7 @@ body {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    color: white;
   }
   .form-container input[type="text"],
   .form-container input[type="date"],

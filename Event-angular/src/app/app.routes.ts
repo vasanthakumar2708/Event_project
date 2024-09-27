@@ -11,6 +11,7 @@ import { LocaltransportComponent } from './localtransport/localtransport.compone
 import { ExternaltransportComponent } from './externaltransport/externaltransport.component';
 import { HostelComponent } from './hostel/hostel.component';
 import { InternaltransportComponent } from './internaltransport/internaltransport.component';
+import { GuestdetailsComponent } from './guestdetails/guestdetails.component';
 
 export const routes: Routes = [
   {path:'', component: LoginComponent },
@@ -23,5 +24,6 @@ export const routes: Routes = [
   {path: 'localtransport', component: LocaltransportComponent},
   {path: 'externaltransport', component: ExternaltransportComponent},
   {path: 'hostel', component: HostelComponent},
-  {path: 'internaltransport', component: InternaltransportComponent}
+  {path: 'internaltransport', component: InternaltransportComponent},
+  {path: 'guestdetails',component: GuestdetailsComponent}
 ];
