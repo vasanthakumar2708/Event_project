@@ -1,1 +1,189 @@
-<p>guest works!</p>
+<div class="form-container">
+    <!-- Guest Accommodation Section -->
+    <h2>Guest Accommodation</h2>
+  
+    <!-- Guest and Task Details Section -->
+    <div class="form-row">
+      <div class="form-group">
+        <label for="accommodationDate" style="color: white;">Date:</label>
+        <input type="date" id="accommodationDate" required />
+      </div>
+      <div class="form-group">
+        <label for="guestName" style="color: white;">Guest Name:</label>
+        <input type="text" id="guestName" required />
+      </div>
+    </div>
+  
+    <div class="form-row">
+      <div class="form-group">
+        <label for="guestDesignation" style="color: white;">Guest Designation:</label>
+        <input type="text" id="guestDesignation" required />
+      </div>
+      <div class="form-group">
+        <label for="taskId" style="color: white;">Task ID:</label>
+        <input type="text" id="taskId" required />
+      </div>
+    </div>
+  
+    <div class="form-row">
+      <div class="form-group">
+        <label for="guestIndustry" style="color: white;">Guest Industry/Institute Name:</label>
+        <input type="text" id="guestIndustry" required />
+      </div>
+      <div class="form-group">
+        <label for="guestAddress" style="color: white;">Guest Address:</label>
+        <input type="text" id="guestAddress" required />
+      </div>
+    </div>
+  
+    <div class="form-row">
+      <div class="form-group">
+        <label for="guestMobileNo" style="color: white;">Guest Mobile Number:</label>
+        <input type="text" id="guestMobileNo" required />
+      </div>
+      <div class="form-group">
+        <label for="guestEmail" style="color: white;">Guest Email ID:</label>
+        <input type="email" id="guestEmail" required />
+      </div>
+    </div>
+  
+    <!-- Additional Guest Details Section -->
+    <div class="form-row">
+      <div class="form-group">
+        <label for="noOfMaleGuests" style="color: white;">No. of Male Guests:</label>
+        <input type="number" id="noOfMaleGuests" required />
+      </div>
+      <div class="form-group">
+        <label for="noOfFemaleGuests" style="color: white;">No. of Female Guests:</label>
+        <input type="number" id="noOfFemaleGuests" required />
+      </div>
+    </div>
+  
+    <div class="form-row">
+      <div class="form-group">
+        <label for="arrivalDate" style="color: white;">Arrival Date:</label>
+        <input type="date" id="arrivalDate" required />
+      </div>
+      <div class="form-group">
+        <label for="arrivalTime" style="color: white;">Arrival Time:</label>
+        <input type="time" id="arrivalTime" required />
+      </div>
+    </div>
+  
+    <div class="form-row">
+      <div class="form-group">
+        <label for="departureDate" style="color: white;">Departure Date:</label>
+        <input type="date" id="departureDate" required />
+      </div>
+      <div class="form-group">
+        <label for="departureTime" style="color: white;">Departure Time:</label>
+        <input type="time" id="departureTime" required />
+      </div>
+    </div>
+  
+    <div class="form-row">
+      <div class="form-group">
+        <label for="noOfDays" style="color: white;">No. of Days:</label>
+        <input type="number" id="noOfDays" required />
+      </div>
+      <div class="form-group">
+        <label for="noOfRooms" style="color: white;">No. of Rooms:</label>
+        <input type="number" id="noOfRooms" required />
+      </div>
+    </div>
+  
+    <div class="form-row">
+      <div class="form-group">
+        <label for="purposeOfVisit" style="color: white;">Purpose of Visit:</label>
+        <input type="text" id="purposeOfVisit" required />
+      </div>
+      <div class="form-group">
+        <label for="department" style="color: white;">Department/Special Lab:</label>
+        <input type="text" id="department" required />
+      </div>
+    </div>
+  
+    <!-- Accommodation Type Section -->
+    <div class="checkbox-group">
+      <label>Accommodation Type:</label>
+      <div class="checkbox-options">
+        <label><input type="checkbox" id="trainingAcademy" /> Training Academy</label>
+        <label><input type="checkbox" id="bitGuestHouse" /> BIT Guest House</label>
+        <label><input type="checkbox" id="notRequired" /> Not Required</label>
+      </div>
+    </div>
+  
+    <!-- Room Type Section -->
+    <div class="checkbox-group">
+      <label>Room Type:</label>
+      <div class="checkbox-options">
+        <label><input type="checkbox" id="singleOccupancy" /> Single Occupancy</label>
+        <label><input type="checkbox" id="doubleOccupancy" /> Double Occupancy</label>
+        <label><input type="checkbox" id="tripleOccupancy" /> Triple Occupancy</label>
+      </div>
+    </div>
+  
+    <!-- Dining Request Section -->
+    <div class="checkbox-group">
+      <label>Dining Request:</label>
+      <div class="checkbox-options">
+        <label><input type="checkbox" id="diningRequired" /> Required</label>
+        <label><input type="checkbox" id="diningNotRequired" /> Not Required</label>
+      </div>
+    </div>
+  
+    <!-- Dining Details Section -->
+    <div class="dining-section">
+      <h3>Dining Details</h3>
+      <table class="dining-table">
+        <thead>
+          <tr>
+            <th style="width: 20%;">Dining Facility</th>
+            <th style="width: 30%;">Date</th>
+            <th style="width: 25%;">Time</th>
+            <th style="width: 25%;">Number of Persons</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Refreshment</td>
+            <td><input type="date" id="refreshmentDate" style="width: 100%;" /></td>
+            <td><input type="time" id="refreshmentTime" style="width: 100%;" /></td>
+            <td><input type="number" id="refreshmentPersons" style="width: 100%;" /></td>
+          </tr>
+          <tr>
+            <td>Breakfast</td>
+            <td><input type="date" id="breakfastDate" style="width: 100%;" /></td>
+            <td><input type="time" id="breakfastTime" style="width: 100%;" /></td>
+            <td><input type="number" id="breakfastPersons" style="width: 100%;" /></td>
+          </tr>
+          <tr>
+            <td>Lunch</td>
+            <td><input type="date" id="lunchDate" style="width: 100%;" /></td>
+            <td><input type="time" id="lunchTime" style="width: 100%;" /></td>
+            <td><input type="number" id="lunchPersons" style="width: 100%;" /></td>
+          </tr>
+          <tr>
+            <td>Refreshment</td>
+            <td><input type="date" id="refreshment2Date" style="width: 100%;" /></td>
+            <td><input type="time" id="refreshment2Time" style="width: 100%;" /></td>
+            <td><input type="number" id="refreshment2Persons" style="width: 100%;" /></td>
+          </tr>
+          <tr>
+            <td>Dinner</td>
+            <td><input type="date" id="dinnerDate" style="width: 100%;" /></td>
+            <td><input type="time" id="dinnerTime" style="width: 100%;" /></td>
+            <td><input type="number" id="dinnerPersons" style="width: 100%;" /></td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <!-- Special Request Section -->
+      <label for="specialRequest">Special Request (if any):</label>
+      <textarea id="specialRequest" rows="3"></textarea>
+    </div>
+  
+    <!-- Submit Button -->
+    <button type="submit">Submit</button>
+  </div>
+  
